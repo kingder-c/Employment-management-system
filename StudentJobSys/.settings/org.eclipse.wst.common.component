@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="StudentJobSys">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/student"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/teacher"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/company"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/role"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/user"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/classes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/course"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/jobinfo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/returninfo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/interviewinfo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/auth"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/userrole"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/data"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/images/touxiang"/>
+        <property name="java-output-path" value="/StudentJobSys/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="StudentJobSys"/>
+    </wb-module>
+</project-modules>

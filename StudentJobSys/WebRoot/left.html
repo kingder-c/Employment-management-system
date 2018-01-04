@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson .header").click(function(){
+		var $parent = $(this).parent();
+		$(".menuson>li.active").not($parent).removeClass("active open").find('.sub-menus').hide();
+		
+		$parent.addClass("active");
+		if(!!$(this).next('.sub-menus').size()){
+			if($parent.hasClass("open")){
+				$parent.removeClass("open").find('.sub-menus').hide();
+			}else{
+				$parent.addClass("open").find('.sub-menus').show();	
+			}
+			
+			
+		}
+	});
+	
+	// 三级菜单点击
+	$('.sub-menus li').click(function(e) {
+        $(".sub-menus li.active").removeClass("active")
+		$(this).addClass("active");
+    });
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('.menuson').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('.menuson').slideUp();
+		}else{
+			$(this).next('.menuson').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#fff3e1;">
+	<div class="lefttop"><span></span>可用功能</div>
+    
+    <dl class="leftmenu">
+        
+    <!-- <dd>
+    <div class="title">
+    <span><img src="images/leftico01.png" /></span>学员管理
+    </div>
+    	<ul class="menuson">
+        第二级菜单展开 第三级 菜单
+        <li class="active">
+            <div class="header">
+            <cite></cite>
+            <a href="index.html" target="rightFrame">开户</a>
+            <i></i>
+            </div>
+            <ul class="sub-menus">
+            <li><a href="javascript:;">文件管理</a></li>
+            <li><a href="javascript:;">模型信息配置</a></li>
+            <li><a href="javascript:;">基本内容</a></li>
+            <li><a href="javascript:;">自定义</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <div class="header">
+            <cite></cite>
+            <a href="#" target="rightFrame">数据列表</a>
+            <i></i>
+            </div>                
+            <ul class="sub-menus">
+            <li><a href="javascript:;">文件数据</a></li>
+            <li><a href="javascript:;">学生数据列表</a></li>
+            <li><a href="javascript:;">我的数据列表</a></li>
+            <li><a href="javascript:;">自定义</a></li>
+            </ul>
+        </li>
+        
+        <li><cite></cite><a href="right.html" target="rightFrame">数据列表</a><i></i></li>
+        <li><cite></cite><a href="imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
+        <li><cite></cite><a href="form.html" target="rightFrame">添加编辑</a><i></i></li>
+        <li><cite></cite><a href="imglist.html" target="rightFrame">图片列表</a><i></i></li>
+        <li><cite></cite><a href="imglist1.html" target="rightFrame">自定义</a><i></i></li>
+        <li><cite></cite><a href="tools.html" target="rightFrame">常用工具</a><i></i></li>
+        <li><cite></cite><a href="filelist.html" target="rightFrame">信息管理</a><i></i></li>
+        <li><cite></cite><a href="tab.html" target="rightFrame">Tab页</a><i></i></li>
+        <li><cite></cite><a href="error.html" target="rightFrame">404页面</a><i></i></li>
+        </ul>    
+    </dd> -->
+        
+    <!-- href 中是需要替换的路径 -->
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>学员管理</div>
+    <ul class="menuson">
+        <li class="active"><cite></cite><a href="StudentServlet?method=query" target="rightFrame">学员信息管理</a><i></i></li>
+        <li><cite></cite><a href="StudentServlet?method=check" target="rightFrame" >学员审核</a><i></i></li>
+    </ul>    
+    </dd> 
+    
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>教师管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="TeacherServlet?method=query" target="rightFrame">教师信息管理</a><i></i></li>
+    </ul>    
+    </dd> 
+     
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>班级管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="ClassesServlet?method=query" target="rightFrame">班级信息管理</a><i></i></li>
+    </ul>    
+    </dd>    
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>课程管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="CourseServlet?method=query" target="rightFrame">课程管理</a><i></i></li>
+    </ul>    
+    </dd>
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>企业管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="CompanyServlet?method=query" target="rightFrame">企业信息管理</a><i></i></li>
+        <li><cite></cite><a href="CompanyServlet?method=query2" target="rightFrame">企业信息审核</a><i></i></li>
+    </ul>    
+    </dd>
+    
+   <!--  <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>学员面试信息管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="InterviewInfoServlet?method=query" target="rightFrame">学员面试信息管理</a><i></i></li>
+    </ul>    
+    </dd> -->
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>学员就业信息管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="JobInfoServlet?method=query" target="rightFrame">学员就业信息管理</a><i></i></li>
+    </ul>    
+    </dd>
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>学员回访信息管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="ReturnInfoServlet?method=query" target="rightFrame">学员回访信息管理</a><i></i></li>
+    </ul>    
+    </dd>
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>用户管理</div>
+    <ul class="menuson">
+    	<li><cite></cite><a href="UserServlet?method=query" target="rightFrame">用户展示</a><i></i></li>
+      <!--   <li><cite></cite><a href="#">开户</a><i></i></li>
+        <li><cite></cite><a href="#">授权</a><i></i></li> -->
+    </ul>    
+    </dd>
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>角色管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="RoleServlet?method=query" target="rightFrame">角色管理</a><i></i></li>
+    </ul>    
+    </dd>
+    
+  <!--   <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>用户权限管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="AuthServlet?method=query" target="rightFrame">用户权限管理</a><i></i></li>
+    </ul>    
+    </dd> -->
+    
+    <dd><div class="title">
+    <span><img src="images/leftico01.png" /></span>数据字典维护</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="DataServlet?method=query" target="rightFrame">数据字典管理</a><i></i></li>
+    </ul>    
+    </dd>
+    
+    </dl>
+    
+</body>
+</html>

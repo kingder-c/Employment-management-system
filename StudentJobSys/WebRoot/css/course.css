@@ -1,0 +1,29 @@
+#course{
+    margin:0px;
+    padding:0px;
+}
+#course figure{
+    width: 230px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+}
+#course figure:hover{
+    box-shadow: 0px 3px 3px 3px darkgray;
+}
+
+#course div{
+    width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+#course_top{
+	text-align: center;
+	font-size: 50px;
+	padding-top: 50px;
+	color: orange;
+	min-width:1300px;
+}
+

@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*����*/
+#head_top{
+    width: 100%;
+    height: 30px;
+    background-image: url("../img/nav-icon.jpg");
+    font-size: 12px;
+    color: white;
+    line-height: 30px;
+    
+}
+#head_top_section{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    min-width: 1139px;
+    max-width: 1600px;
+    background-image: url("../img/nav-icon.jpg")
+
+}
+#head_top_left{
+    float: left;
+}
+#head_top_right{
+    float: right;
+    margin-right: 18px;
+}
+#head_top_right img{
+    position: relative;
+    top: 4px;
+}
+
+/*ͷ��*/
+#head_bottom{
+    width: 100%;
+    height: 84px;
+    background: url("../img/nav-icon1.jpg");
+    box-shadow: 0px 3px 10px 0px #333333;
+    position: relative;
+    z-index: 5;
+
+}
+#head_bottom_section{
+    min-width: 1139px;
+    max-width: 1600px;
+    width: 80%;
+    height: 84px;
+    margin: 0 auto;
+    background: url("../img/nav-icon1.jpg");
+}
+/*logo*/
+#head_bottom img{
+    position: relative;
+    top: 10px;
+}
+
+
+#head_bottom ul{
+    list-style: none;
+    float: right;
+}
+#head_bottom li{
+    width: 100px;
+    height: 84px;
+    float: left;
+    text-align: center;
+    line-height: 84px;
+    color: white;
+}
+#head_bottom li a{
+    text-decoration: none;
+}
+#head_bottom li:hover{
+    background-color: #333333;
+
+}
+
+
+/*展示列表*/
+
+.zb_logoC{float:right;list-style: none;}
+.zb_logoC dl{float:left;}
+.zb_logoC dl dd{float:left;}
+.zb_logoC dl dd a{text-decoration:none;display:block;width:100px;height:84px;text-align:center;line-height:84px;font-size:16px;color:white;font-weight:bold}
+.zb_logoC dl dd a:hover{background:#9AAAAA;color:#fff}
+.zb_logoC dl ul{position:absolute;background:#fff;opacity:0.7;width:200px;left:600px;top:60px;z-index:1000}
+.zb_logoC dl ul li{float:left;background-color:none; }
+.zb_logoC dl ul li a{width:100px;height:20px;text-align:center;line-height:20px;color:#000;font-size:16px}
+.zb_logoC dl ul li a:hover{color:white;background:none}
+
+#showstudent{
+    margin:0px;
+    padding:0px;
+    margin-left:-20px;
+}
+#showteacher{
+    margin:0px;
+    padding:0px;
+    margin-left:80px;
+}
+#showcompany{
+    margin:0px;
+    padding:0px;
+    margin-left:180px;
+}
+/*自动换图片*/
+#img{
+	position: relative;
+	z-index:1;
+	min-width: 800px;
+    max-width: 1600px;
+    width: 100%;
+    /*max-width: 2000px;*/
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#main{
+	width: 80%;
+	min-width: 800px;
+	max-width: 1600px;
+	position: relative;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size:16px;
+	font-weight:bold;
+	 margin: 0 auto;
+	z-index:1;
+}
+
+/*gerenInfo.jsp*/
+#main table{
+	color:white;
+}
+
+#center{
+	background-image:url("../images/111.jpg");
+}
+
+/*banner*/
+#banner{
+
+    min-width: 800px;
+    max-width: 1600px;
+    width: 100%;
+    /*max-width: 2000px;*/
+    height: 530px;
+    background-image: url("../img/banner3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/*������Ŀ*/
+#serviceitems{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#serviceitems_top{
+    width: 100%;
+    height: 144px;
+    background-image: url("../img/title.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#serviceitems_bottom{
+    width: 1230px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#serviceitems_bottom figure{
+    width: 145px;
+    max-width: 160px;
+    height: 270px;
+    display: inline-block;
+    margin: 0px 27.5px 0px 27.5px;
+}
+#serviceitems_bottom figcaption h4{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#serviceitems_bottom figcaption span{
+    font-size: 12px;
+}
+
+/*ѡ��ά��*/
+#select{
+    width: 100%;
+    height: 717px;
+    background-image: url("../img/content.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+/*��Ʒ����*/
+#case{
+    width: 100%;
+    height: 760px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+#case_top{
+    width: 100%;
+    height: 128px;
+    background-image: url("../img/title1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#case_bottom{
+    width: 1245px;
+    height: 580px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#case_bottom figure{
+    width: 287px;
+    height: 280px;
+    display: inline-block;
+    margin: 10px;
+}
+#case_bottom figure:hover{
+    opacity: 0.5;
+}
+#case_bottom figure figcaption{
+    width: 257px;
+    height: 50px;
+    padding: 15px;
+    position: relative;
+    top: -5px;
+    background-color: #F0F0F0;
+}
+#case_bottom figure figcaption a{
+    color: orange;
+}
+
+/*�ײ�*/
+#foot{
+    background-image: url("../img/footer.jpg");
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+#foot img{
+    position: relative;
+    top: 13px;
+}
+#foot span{
+    display: block;
+    position: relative;
+    top: 10px;
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/*teacher.jsp*/
+#teacher a{
+	text-decoration:none;
+}
+

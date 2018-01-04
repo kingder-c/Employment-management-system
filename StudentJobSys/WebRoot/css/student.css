@@ -1,0 +1,30 @@
+#student{
+    margin:0px;
+    padding:0px;
+}
+#student figure{
+    width: 90px;
+    height: 120px;
+    padding: 20px;
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+}
+#student figure:hover{
+    box-shadow: 0px 1px 1px 1px darkgray;
+}
+
+#student div{
+    width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+#student_top{
+	text-align: center;
+	font-size: 50px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	color: orange;
+	min-width:1300px;
+}
+

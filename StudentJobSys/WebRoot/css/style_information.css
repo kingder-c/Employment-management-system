@@ -1,0 +1,40 @@
+#information{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#information h3{
+    line-height: 40px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+#information .information{
+    width: 1180px;
+    height: 200px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+#information .information h4{
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+#information span{
+    display: block;
+    line-height: 25px;
+}
+#information figure{
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+}
+#information a{
+    text-decoration: none;
+}

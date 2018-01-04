@@ -1,0 +1,45 @@
+/*��������*/
+#aboutus{
+    width: 1025px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/*��ϵ��ʽ*/
+#aboutus_contact{
+    width: 400px;
+    height: 430px;
+    /*display: inline-block;*/
+    float: left;
+}
+#aboutus_contact_top{
+    width: 400px;
+    height: 200px;
+}
+#aboutus_contact_top h3{
+    line-height: 60px;
+    font-size: 25px;
+
+}
+#aboutus_contact span{
+    display: block;
+    line-height: 30px;
+    font-size: 13px;
+    position: relative;
+    top: 12px;
+}
+#aboutus_contact_bottom{
+    padding-top: 20px;
+}
+#aboutus_contact_bottom img{
+    width: 200px;
+}
+/*��ͼ*/
+#map{
+    width: 450px;
+    height: 300px;
+    /*display: inline-block;*/
+    float: left;
+
+    margin-left: 50px;
+}
