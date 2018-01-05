@@ -12,7 +12,8 @@
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<!--  <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=mQMD9GPZVsfTT3LjpNvZlaXnDytFDXMq"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(112.46489,38.020058);//定义一个中心点坐标
+        var point = new BMap.Point(116.34935,39.957945);//定义一个中心点坐标
         map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
@@ -58,7 +59,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"我们就住这",content:"快来找",point:"112.464208|38.019817",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"北京交通大学",content:"地址：北京市海淀区上园村3号",point:"116.34935|39.957945",isOpen:0,icon:{w:50,h:50,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
@@ -110,7 +111,7 @@
     }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("http://ouewomi2z.bkt.clouddn.com/18-1-5/50221879.jpg", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
     

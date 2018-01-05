@@ -12,7 +12,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>关于我们</title>
     <link href="css/style2.css" rel="stylesheet" type="text/css"/>
 	<link href="css/style_aboutus.css" rel="stylesheet" type="text/css"/>
+	<link href="<%=basePath%>js/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="<%=basePath%>js/jquery.js"></script>
+	<script type="text/javascript" src="<%=basePath%>bootstrap.min.js"></script>
 	<script type="text/javascript" src="<%=basePath%>js/show.js"></script>
 	
     <style>
@@ -28,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- 顶部-->
     <div id="head_top">
         <div id="head_top_section">
-            <div id="head_top_left">嗨，欢迎来到我们！7年来我们一直专注网络品牌设计！</div>
+            <div id="head_top_left">软件工程七班最棒小组作品</div>
             <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0351-100000000 设为首页 / 联系我们</div>
         </div>
     </div>
@@ -120,10 +122,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div id="aboutus_contact_top">
                 <h3>联系我们 ABOUT US</h3>
                 <hr/>
-                <span>咨询热线：18435186359</span>
-                <span>邮箱：yannyuyao@163.COM</span>
-                <span>地址：太原市中北大学文澜1单元 3023 </span>
-                <span>网址：WWW.yanyuyao.COM</span>
+                <span>雍和宫大区总经理：闫煜瑶<button type="button" id="myButton" class="btn btn-primary" style="display:inline;">找到他</button></span>
+                <span>交通大学大区总经理：闫聪聪<button type="button" id="myButton" class="btn btn-primary" style="display:inline;">找到他</button></span>
+                <span>顺义地区总经理：张健</span>
+                <span>公益西桥小职员：祝渊</span>
+                <span>望京小大区总经理：朱峣</span>
+                <span>技术顾问：张博</span>
             </div>
             <div id="aboutus_contact_bottom">
                 <img src="img/1.jpg"/>

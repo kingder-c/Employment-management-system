@@ -86,7 +86,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- 顶部-->
     <div id="head_top">
         <div id="head_top_section">
-            <div id="head_top_left">嗨，欢迎来到维信！7年来我们一直专注网络品牌设计！</div>
+            <div id="head_top_left">软件工程七班最棒小组作品</div>
             <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0543-300000000 设为首页 / 联系我们</div>
         </div>
     </div>
@@ -164,9 +164,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      
      <div id="center">   
      <div id="main" >
-        <div style="text-align: center;padding: 15px;font-family:'宋体';font-size: 20px;color:white;">学员详情</div>
+        <div style="text-align: center;padding: 15px;font-family:'宋体';font-size: 20px;color:black;">学员详情</div>
 		<div style="border-bottom: 1px solid white;"></div>
-		<div class="item-section " style="font-size: 20px;color:white;">
+		<div class="item-section " style="font-size: 20px;color:black;">
 			<div class="mask-area" >
 	    	<h3><span class="b f14">基本信息</span></h3>
 			<div class="item-bd">
