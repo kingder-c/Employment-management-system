@@ -10,7 +10,6 @@
 	<classpathentry kind="src" path="course"/>
 	<classpathentry kind="src" path="returninfo"/>
 	<classpathentry kind="src" path="jobinfo"/>
-	<classpathentry kind="src" path="interviewinfo"/>
 	<classpathentry kind="src" path="auth"/>
 	<classpathentry kind="src" path="userrole"/>
 	<classpathentry kind="src" path="data"/>
