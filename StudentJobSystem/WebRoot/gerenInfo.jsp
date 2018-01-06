@@ -86,7 +86,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- 顶部-->
     <div id="head_top">
         <div id="head_top_section">
-            <div id="head_top_left">嗨，欢迎来到维我们！7年来我们一直专注网络品牌设计！</div>
+            <div id="head_top_left">软件工程7班最棒小组作品</div>
             <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0351-100000000 设为首页 / 联系我们</div>
         </div>
     </div>
