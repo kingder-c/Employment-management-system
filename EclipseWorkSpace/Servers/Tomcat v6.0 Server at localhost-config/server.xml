@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      </Host>
+      <Context docBase="StudentJobSystem" path="/StudentJobSys" reloadable="true" source="org.eclipse.jst.jee.server:StudentJobSystem"/></Host>
     </Engine>
   </Service>
 </Server>

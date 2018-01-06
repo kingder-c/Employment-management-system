@@ -28,7 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- 顶部-->
     <div id="head_top">
         <div id="head_top_section">
-            <div id="head_top_left">嗨，欢迎来到我们！7年来我们一直专注网络品牌设计！</div>
+            <div id="head_top_left">软件工程7班最棒小组作品</div>
             <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0351-100000000 设为首页 / 联系我们</div>
         </div>
     </div>
@@ -127,7 +127,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <hr/>
                 <span>咨询热线：18435186359</span>
                 <span>邮箱：yannyuyao@163.COM</span>
-                <span>地址：太原市中北大学文澜1单元 3023 </span>
+                <span>地址：北京市海淀区上园村三号院 </span>
                 <span>网址：WWW.yanyuyao.COM</span>
             </div>
             <div id="aboutus_contact_bottom">
@@ -146,7 +146,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="foot">
         <img src="img/footer-icon.png"/>
         <span>咨询热线：18435186359|邮箱：yannyuyao@163.com</span>
-        <span>地址：太原市尖草坪区学院路3号中北大学 网址：WWW.yanyuyao.COM</span>
+        <span>地址：北京市海淀区上园村三号院北京交通大学 网址：WWW.yanyuyao.COM</span>
         <span>COPYRGHT ©2008-2015 THINKARTCO,LTD.ALL RIGHTS RESERVED 网站备案号：晋ICP2015897554号</span>
     </div>
 
