@@ -166,7 +166,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<tr>
 					<td class="tdrsname" align="right">审核状态：</td>
 					<td class="tdrsname">
-						<select class="dfinput" id="com_checkstatus" name="com_checkstatus" type="text" style="width: 300px;>  
+						<select class="dfinput" id="com_checkstatus" name="com_checkstatus" type="text" style="width: 300px;">  
 					      <option value ="">请选择</option>  
 					      <option value ="已审核">已审核</option>  
 					      <option value ="审核中">审核中</option>
@@ -177,7 +177,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  				<tr>
 					<td class="tdrsname" align="right">企业状态：</td>
 					<td class="tdrsname">
-						<select class="dfinput" id="com_status" name="com_status" type="text" style="width: 300px;>  
+						<select class="dfinput" id="com_status" name="com_status" type="text" style="width: 300px;">  
 					      <option value ="5">请选择</option>  
 					      <option value ="0">招聘中</option>  
 					      <option value="1">不招聘</option>  

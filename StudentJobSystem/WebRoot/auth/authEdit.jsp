@@ -128,7 +128,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<tr>
 			<td class="tdrsname" align="right">父项：</td>
 			<td class="tdrsname">
-				<select class="dfinput" name="auth_parentid" type="text" style="width: 400px;>  
+				<select class="dfinput" name="auth_parentid" type="text" style="width: 400px;">  
 			        <option value = "">请选择</option>  
 					<option value = "学员管理">学员管理</option>
 					<option value = "教师管理">教师管理</option>
@@ -156,7 +156,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<tr>
 			<td class="tdrsname" align="right">状态：</td>
 			<td class="tdrsname">
-				<select class="dfinput" id="auth_state" name="auth_state" type="text" style="width: 400px;>  
+				<select class="dfinput" id="auth_state" name="auth_state" type="text" style="width: 400px;">  
 			        <option value = "">请选择</option>
 					<option value = "0">正常</option>
 					<option value = "1">关闭</option>

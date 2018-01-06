@@ -144,7 +144,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  				<tr>
 					<td class="tdrsname" align="right">老师状态：</td>
 					<td class="tdrsname">
-						<select class="dfinput" name="tea_state" type="text" style="width: 300px;>  
+						<select class="dfinput" name="tea_state" type="text" style="width: 300px;">  
 					      <option value ="">请选择</option>  
 					      <option value ="在职">在职</option>  
 					      <option value="休假">休假</option>  
