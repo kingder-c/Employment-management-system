@@ -18,7 +18,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/style.css">
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/bootstrap.min.css">
+		<style type="text/css">
+		body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";font-size:14px;}
+		#r-result,#r-result table{width:100%; clear:both;}
+	</style>
 	<script src="<%=basePath%>js/jquery.js" type="text/javascript"></script>
+	<script src="<%=basePath%>js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=mQMD9GPZVsfTT3LjpNvZlaXnDytFDXMq"></script>
 	<script type="text/javascript">
 		function doSubmit(currentPage) {
 			$("#pageIndex").val(currentPage);
@@ -141,10 +148,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<thead>
 				<tr>
 					<th width="8%">选择</th>
-					<th width="20%">名字</th>
-					<th width="20%">状态</th>
-					<th width="20%">城市</th>
+					<th width="15%">名字</th>
+					<th width="15%">状态</th>
+					<th width="15%">城市</th>
 					<th width="auto">审核状态</th>
+					<th width="25%">路线规划</th>
 				</tr>
 			</thead>
 			<!-- EL表达式中 empty为关键字 用来判断对象是否为空 -->
@@ -171,6 +179,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:forEach>
 					<td>${companyBean.com_city }</td>
 					<td>${companyBean.com_checkstatus }</td>
+					<td><button type="button" id="myButton1"  class="btn" style="background-color: #ff9900bf" autocomplete="off" onclick="CarToObj(116.523091,39.9551)"> 驾车</button>&nbsp<button type="button" id="myButton1"  class="btn" style="background-color: #ff9900bf" autocomplete="off" onclick="BusToObj(116.523091,39.9551)"> 公交</button></td>
 				</tr>
 			</c:forEach>
 		</table>
@@ -208,7 +217,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 		</div>
 		
-		
 		<table>
 				<tr style="line-height:50px; ">
 					<!-- 按钮换成背景图片 -->
@@ -220,6 +228,99 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</td><td colspan="3">&nbsp;</td>
 				</tr>
 		</table>
+		<div>
+		  <div style="width:60%;height:450px;border:#ccc solid 1px;" id="dituContent"></div>
+
+		  <div id="r-result" style="display:none;width:40%;float:right;margin-top:-450px"></div>
+		</div>
+		<script>
+	    //创建和初始化地图函数：
+	    function initMap(){
+	        createMap();//创建地图
+	        setMapEvent();//设置地图事件
+	        addMapControl();//向地图添加控件
+	        //addMarker();//向地图中添加marker
+	    }
+	    
+	    //创建地图函数：
+	    function createMap(){
+	        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+	        var point = new BMap.Point(116.34935,39.957945);//定义一个中心点坐标
+	        map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+	        window.map = map;//将map变量存储在全局
+	    }
+	    
+	    //地图事件设置函数：
+	    function setMapEvent(){
+	        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+	        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+	        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+	        map.enableKeyboard();//启用键盘上下左右键移动地图
+	    }
+	    function CarToObj(x,y){
+	    	//alert(x+y);
+	    	document.getElementsByTagName('BODY')[0].scrollTop=document.getElementsByTagName('BODY')[0].scrollHeight;
+	        var geolocation = new BMap.Geolocation();
+	    	geolocation.getCurrentPosition(function(r){
+	    		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+	    			var mk = new BMap.Marker(r.point);
+	    			map.addOverlay(mk);
+	    			map.panTo(r.point);
+
+	    			var p1 = new BMap.Point(r.point.lng,r.point.lat);
+	    			var p2 = new BMap.Point(x,y);
+
+	    			var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+	    			driving.search(p1, p2);
+	    		}
+	    		else {
+	    			alert('failed'+this.getStatus());
+	    		}        
+	    	},{enableHighAccuracy: true});
+	    }
+        function BusToObj(x,y){
+        	//alert(x+y);
+        	document.getElementsByTagName('BODY')[0].scrollTop=document.getElementsByTagName('BODY')[0].scrollHeight;
+	    	//alert(x+y);
+	    	document.getElementsByTagName('BODY')[0].scrollTop=document.getElementsByTagName('BODY')[0].scrollHeight;
+	        var geolocation = new BMap.Geolocation();
+	    	geolocation.getCurrentPosition(function(r){
+	    		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+	    			var mk = new BMap.Marker(r.point);
+	    			map.addOverlay(mk);
+	    			map.panTo(r.point);
+
+	    			var p1 = new BMap.Point(r.point.lng,r.point.lat);
+	    			var p2 = new BMap.Point(x,y);
+
+	    			var transit = new BMap.TransitRoute(map, {
+	            		renderOptions: {map: map, panel: "r-result"}, 
+	            		onResultsHtmlSet : function(){$("#r-result").show()}  	
+	                });
+	                transit.search(p1,p2);
+	    		}
+	    		else {
+	    			alert('failed'+this.getStatus());
+	    		}        
+	    	},{enableHighAccuracy: true});
+
+            
+	    }
+	    
+	    //地图控件添加函数：
+	    function addMapControl(){
+	        //向地图中添加缩放控件
+		var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_ZOOM});
+		map.addControl(ctrl_nav);
+	        //向地图中添加缩略图控件
+		var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+		map.addControl(ctrl_ove);
+	        //向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+		map.addControl(ctrl_sca);
+	    }    //开启鼠标滚轮缩放
+	    initMap();
+		</script>
 	</div>
   </body>
 </html>
