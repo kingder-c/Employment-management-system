@@ -123,16 +123,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="aboutus">
         <div id="aboutus_contact">
             <div id="aboutus_contact_top">
-                <h3>联系我们 ABOUT US</h3>
+                <h3>小组成员介绍</h3>
                 <hr/>
+                <span>组&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp长：闫煜瑶</span>
+                <span>组&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp员：张&nbsp&nbsp&nbsp&nbsp健 -颜值担当 </span>
+                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp闫聪聪 - </span>
+                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp朱&nbsp&nbsp&nbsp&nbsp峣 - </span>
+                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp祝&nbsp&nbsp&nbsp&nbsp渊 - </span>
+                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp张&nbsp&nbsp&nbsp&nbsp博 - </span>
+                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp耿雪冰 - </span>
                 <span>咨询热线：18435186359</span>
-                <span>邮箱：yannyuyao@163.COM</span>
-                <span>地址：北京市海淀区上园村三号院 </span>
-                <span>网址：WWW.yanyuyao.COM</span>
+                <span>邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱：yannyuyao@163.com</span>
+                <span>地&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址：北京市海淀区上园村三号院 </span>
+                <span>网&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址：http://www.yanyuyao.xyz</span>
             </div>
-            <div id="aboutus_contact_bottom">
+<!--             <div id="aboutus_contact_bottom">
                 <img src="img/1.jpg"/>
-            </div>
+            </div> -->
 
         </div>
         <div id ="map" ><jsp:include page="map.jsp" />  </div> 

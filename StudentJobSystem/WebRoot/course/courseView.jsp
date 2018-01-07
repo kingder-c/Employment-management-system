@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<colgroup><col width="100%"><col width="*"></colgroup>
 							<tbody>
 		  						<div class="photo-area" lang="">
-									<img alt="${cou.cou_logo }" src="${cou.cou_logo }" width="500" height="250">
+									<img alt="${cou.cou_logo }" src="${cou.cou_logo }" width="200" height="300">
 								</div>
 	  						</tbody>
 						</table>

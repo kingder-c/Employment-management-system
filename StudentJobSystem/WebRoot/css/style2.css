@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-/*����*/
+/*锟斤拷锟斤拷*/
 #head_top{
     width: 100%;
     height: 30px;
@@ -33,7 +33,7 @@
     top: 4px;
 }
 
-/*ͷ��*/
+/*头锟斤拷*/
 #head_bottom{
     width: 100%;
     height: 84px;
@@ -79,7 +79,7 @@
 }
 
 
-/*展示列表*/
+/*灞曠ず鍒楄〃*/
 
 .zb_logoC{float:right;list-style: none;}
 .zb_logoC dl{float:left;}
@@ -106,7 +106,7 @@
     padding:0px;
     margin-left:180px;
 }
-/*自动换图片*/
+/*鑷姩鎹㈠浘鐗�*/
 #img{
 	position: relative;
 	z-index:1;
@@ -136,11 +136,12 @@
 
 /*gerenInfo.jsp*/
 #main table{
-	color:white;
+	color:black;
 }
 
 #center{
 	background-image:url("../images/111.jpg");
+	height:800px
 }
 
 /*banner*/
@@ -157,7 +158,7 @@
     margin: 0 auto;
 }
 
-/*������Ŀ*/
+/*锟斤拷锟斤拷锟斤拷目*/
 #serviceitems{
     width: 100%;
     height: 450px;
@@ -193,7 +194,7 @@
     font-size: 12px;
 }
 
-/*ѡ��ά��*/
+/*选锟斤拷维锟斤拷*/
 #select{
     width: 100%;
     height: 717px;
@@ -203,7 +204,7 @@
     margin-top: 30px;
 }
 
-/*��Ʒ����*/
+/*锟斤拷品锟斤拷锟斤拷*/
 #case{
     width: 100%;
     height: 760px;
@@ -244,7 +245,7 @@
     color: orange;
 }
 
-/*�ײ�*/
+/*锟阶诧拷*/
 #foot{
     background-image: url("../img/footer.jpg");
     width: 100%;

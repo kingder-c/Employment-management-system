@@ -50,18 +50,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<tr><th>开设课程：</th><td>${cla.cou_id }</td></tr>
 						<tr><th>授课教师：</th><td>${cla.tea_id }</td></tr>
 						<tr><th>人数：</th><td>${cla.cla_num }</td></tr>
-						<tr><th>授课地点：</th><td>${cla.cla_address }</td></tr>
+						<%-- <tr><th>授课地点：</th><td>${cla.cla_address }</td></tr>
 						<tr><th>班主任：</th><td>${cla.cla_master }</td></tr>
 						<tr><th>班长：</th><td>${cla.cla_head }</td></tr>
-						<tr><th>班级QQ群：</th><td>${cla.cla_QQ }</td></tr>
+						<tr><th>班级QQ群：</th><td>${cla.cla_QQ }</td></tr> --%>
 						<tr><th>班级性质：</th><td>${cla.cla_nature }</td></tr>
-						<tr><th>班级特请：</th><td>${cla.cla_info }</td></tr>
+						<%-- <tr><th>班级详情：</th><td>${cla.cla_info }</td></tr>
 						<tr><th>班级类型：</th><td>${cla.cla_kind }</td></tr>
-						<tr><th>开班时间：</th><td>${cla.cla_starttime }</td></tr>
-						<tr><th>预计结课时间：</th><td>${cla.cla_wantendtime }</td></tr>
+						 --%>
+						 <tr><th>开班时间：</th><td>${cla.cla_starttime }</td></tr>
+						<%-- <tr><th>预计结课时间：</th><td>${cla.cla_wantendtime }</td></tr>
 						<tr><th>实际结课时间：</th><td>${cla.cla_trueendtime }</td></tr>
 						<tr><th>班级状态：</th><td>${cla.cla_state }</td></tr>
-						<tr><th>备注：</th><td>${cla.cla_note }</td></tr>
+						 --%>
+						 <tr><th>备注：</th><td>${cla.cla_note }</td></tr>
 						
 						</tbody>
 						</table>

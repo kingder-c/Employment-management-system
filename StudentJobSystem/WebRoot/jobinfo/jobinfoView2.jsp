@@ -72,7 +72,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 					<div class="u-photo">
 						<div class="photo-area">
-								<img alt="${jobinfoview.stu_name }" src="${jobinfoview.job_photo }" width="222" height="305">
+								<img alt="" src="http://localhost:8080/StudentJobSys/img/student/yancongcong.jpg" width="222" height="305">
 							
 						</div>
 						<div class="showphoto">
@@ -94,7 +94,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<tr><th>录入人：</th><td>${jobinfoview.job_adder }</td></tr>
 							<tr><th>录入时间：</th><td>${jobinfoview.job_addtime }</td></tr>
 							
-							<tr><th>备注：</th><td>${jobinfoview.job_compact }</td></tr>
+							<tr><th>备注：</th><td></td></tr>
 	    				</tbody>
 					</table>
 				</div>

@@ -164,15 +164,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      
      <div id="center">   
      <div id="main" >
-        <div style="text-align: center;padding: 15px;font-family:'宋体';font-size: 20px;color:white;">学员详情</div>
-		<div style="border-bottom: 1px solid white;"></div>
-		<div class="item-section " style="font-size: 20px;color:white;">
+        <div style="text-align: center;padding: 15px;font-family:'宋体';font-size: 20px;color:black;">学员详情</div>
+		<div style="border-bottom: 1px solid black;"></div>
+		<div style="left:460px;position:absolute"te >
+		<div class="item-section " style="font-size: 20px;color:black;">
 			<div class="mask-area" >
 	    	<h3><span class="b f14">基本信息</span></h3>
 			<div class="item-bd">
 				<div id="base-info" class="info-area clearfix" style="width: 100% ">
 					<div style="float:left;width: 80% ">
-						<table>
+						<table style="left:200px">
 						<colgroup><col width="160"><col width="*"></colgroup>
 						<tbody>
 						<tr><th>姓名：</th>
@@ -212,20 +213,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</tr>
 	    				</tbody>
 						</table>
-					</div>
-				<%-- 	<div class="u-photo">
-						<div class="photo-area">
-								<img alt="${stuv.stu_name }" src="${stuv.stu_img }" width="222" height="305">
-							
-						</div>
-						<div class="showphoto">
-					        <label>${stuv.stu_name }</label>
-					    </div>
-					</div> --%>
-				</div>
-			</div>
-		</div>
-		<div class="mask-area">
+						<div class="mask-area">
 	    	<h3><span class="b f14">联系方式</span></h3>
 			<div class="item-bd">
 				<div class="info-area clearfix" id="base-info">
@@ -241,7 +229,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-		<div class="mask-area">
+				<div class="mask-area">
 	    	<h3><span class="b f14">教育经历</span></h3>
 			<div class="item-bd">
 				<div class="info-area clearfix" id="base-info">
@@ -258,7 +246,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-		<div class="mask-area">
+				<div class="mask-area">
 	    	<h3><span class="b f14">备注</span></h3>
 			<div class="item-bd">
 				<div class="info-area clearfix" id="base-info">
@@ -283,15 +271,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-	</div>
+		
+			<br>
 	
-	
-		<div
-			style="padding-bottom: 20px; text-align: center;position: relative;">
+		<div style="padding-bottom: 20px; text-align: center;position: relative;">
 			<input type="button" value="修改" onclick="doUpdate();"/>
 			<input type="button" value="添加就业信息" onclick="addJobInfo();"/>
 			<input type="button" value="返回" onclick="javascript:history.back();"/>
 		</div>
+					</div>
+				<%-- 	<div class="u-photo">
+						<div class="photo-area">
+								<img alt="${stuv.stu_name }" src="${stuv.stu_img }" width="222" height="305">
+							
+						</div>
+						<div class="showphoto">
+					        <label>${stuv.stu_name }</label>
+					    </div>
+					</div> --%>
+				</div>
+			</div>
+		</div>
+		
+
+
+	</div>
+	</div>
+
 	</div>
 	</div>
 	

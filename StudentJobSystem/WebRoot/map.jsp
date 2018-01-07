@@ -102,6 +102,24 @@
 				}
 			})()
         }
+        
+        var geolocation = new BMap.Geolocation();
+    	geolocation.getCurrentPosition(function(r){
+    		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+    			var mk = new BMap.Marker(r.point);
+    			map.addOverlay(mk);
+    			map.panTo(r.point);
+
+    			var p1 = new BMap.Point(r.point.lng,r.point.lat);
+    			var p2 = new BMap.Point(116.34935,39.957945);
+
+    			var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+    			driving.search(p1, p2);
+    		}
+    		else {
+    			alert('failed'+this.getStatus());
+    		}        
+    	},{enableHighAccuracy: true});
     }
     //创建InfoWindow
     function createInfoWindow(i){
