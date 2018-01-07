@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50720
 File Encoding         : 65001
 
-Date: 2018-01-07 14:01:54
+Date: 2018-01-07 23:54:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -64,11 +64,11 @@ CREATE TABLE `classes_info` (
 -- ----------------------------
 -- Records of classes_info
 -- ----------------------------
-INSERT INTO `classes_info` VALUES ('2', '111', '2', '13140F01', '混合班', '15', '2017-05-17', '闫煜瑶', '', '2017-06-02', '0');
-INSERT INTO `classes_info` VALUES ('111', '111', '1', '13140B01', '散招', '33', '2017-05-10', '闫煜瑶', '', '2017-06-01', '0');
-INSERT INTO `classes_info` VALUES ('113', '2', '1', '13140A01', '散招', '25', '2017-05-18', '闫煜瑶', '', '2017-06-01', '0');
-INSERT INTO `classes_info` VALUES ('114', '111', '2', '13140D01', '3+1合作', '20', '2017-05-23', '闫煜瑶', '', '2017-06-01', '0');
-INSERT INTO `classes_info` VALUES ('115', '2', '3', '13140C01', '混合班', '26', '2017-04-05', '闫煜瑶', '', '2017-06-04', '0');
+INSERT INTO `classes_info` VALUES ('2', '111', '2', '1707', '混合班', '15', '2017-05-17', '闫煜瑶', '', '2017-06-02', '0');
+INSERT INTO `classes_info` VALUES ('111', '111', '1', '1707', '散招', '33', '2017-05-10', '闫煜瑶', '', '2017-06-01', '0');
+INSERT INTO `classes_info` VALUES ('113', '2', '1', '1707', '散招', '25', '2017-05-18', '闫煜瑶', '', '2017-06-01', '0');
+INSERT INTO `classes_info` VALUES ('114', '111', '2', '1707', '3+1合作', '20', '2017-05-23', '闫煜瑶', '', '2017-06-01', '0');
+INSERT INTO `classes_info` VALUES ('115', '2', '3', '1707', '混合班', '26', '2017-04-05', '闫煜瑶', '', '2017-06-04', '0');
 
 -- ----------------------------
 -- Table structure for company_info
@@ -88,25 +88,27 @@ CREATE TABLE `company_info` (
   `com_note` varchar(50) DEFAULT NULL,
   `com_checkstatus` varchar(20) DEFAULT NULL,
   `com_delete` int(1) DEFAULT NULL,
+  `x` double(20,5) DEFAULT NULL,
+  `y` double(20,5) DEFAULT NULL,
   PRIMARY KEY (`com_id`),
   KEY `com_name` (`com_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of company_info
 -- ----------------------------
-INSERT INTO `company_info` VALUES ('1', '山西汾酒', '汾阳', '张先生', '18435185635', '860157625@163.com', '酒酿', '0', '11', '哈哈', ' 五险一金,出差补助', '已审核', '1');
-INSERT INTO `company_info` VALUES ('3', '分', '分', '分', '14', '807820764@qq.com', '分', '0', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('5', '腾讯', '汾阳', '哈哈', '18435185', '807820764@qq.com', '迪庆', '0', '3', null, '', '已审核', '1');
-INSERT INTO `company_info` VALUES ('6', '万达', '青岛', '王先生', '18859888888', '18859888888@163.com', '万达', '0', '4', null, '', '已审核', '0');
-INSERT INTO `company_info` VALUES ('8', '少年宫', '太原', '赵女士', '18456982365', '18456982365@163.com', '幼师', '0', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('9', '大疆', '新疆', '李', '762543', '807820764@qq.com', '大疆', '0', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('51', '中央电视台', '北京', '魏女士', '16854265973', '16854265973@163.com', '数字媒体', '0', '2', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('52', '百度（北京）', '北京', '王女士', '15864789536', '15864789536@163.com', 'Java', '0', '4', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('53', '网易', '深圳', '刘女士', '13356479852', '13356479852@163.com', 'UI', '0', '2', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('54', '美团（上海分部）', '上海', '张先生', '16598654723', '16598654723@163.com', 'java', '0', '3', null, ' 五险一金,免费美团订餐。', '已审核', '0');
-INSERT INTO `company_info` VALUES ('55', '华为（北京分公司）', '北京', '李先生', '15865986742', '15865986742@163.com', '华为（北京分公司）', '1', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0');
-INSERT INTO `company_info` VALUES ('84', '大疆33', '重庆', '', '', '', '大疆33', '0', '', null, '', '已审核', null);
+INSERT INTO `company_info` VALUES ('1', '山西汾酒', '汾阳', '张先生', '18435185635', '860157625@163.com', '酒酿', '0', '11', '哈哈', ' 五险一金,出差补助', '已审核', '1', null, null);
+INSERT INTO `company_info` VALUES ('5', '腾讯', '汾阳', '哈哈', '18435185', '807820764@qq.com', '迪庆', '0', '3', null, '', '已审核', '1', null, null);
+INSERT INTO `company_info` VALUES ('6', '万达', '青岛', '王先生', '18859888888', '18859888888@163.com', '万达', '0', '4', null, '', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('8', '少年宫', '太原', '赵女士', '18456982365', '18456982365@163.com', '幼师', '0', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('9', 'FBI', '新疆', 'Mr.Lee', '762543', '807820764@163.com', 'haha', '1', '3', null, '', '', '0', null, null);
+INSERT INTO `company_info` VALUES ('51', '中央电视台', '北京', '魏女士', '16854265973', '16854265973@163.com', '数字媒体', '0', '2', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('52', '百度（北京）', '北京', '王女士', '15864789536', '15864789536@163.com', 'Java', '0', '4', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('53', '网易', '深圳', '刘女士', '13356479852', '13356479852@163.com', 'UI', '0', '2', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('54', '美团（上海分部）', '上海', '张先生', '16598654723', '16598654723@163.com', 'java', '0', '3', null, ' 五险一金,免费美团订餐。', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('55', '华为（北京分公司）', '北京', '李先生', '15865986742', '15865986742@163.com', '华为（北京分公司）', '1', '3', null, ' 五险一金,还有旅游福利待遇。 ', '已审核', '0', null, null);
+INSERT INTO `company_info` VALUES ('84', 'Tencent', '重庆', '马云', '13838389438', '13838389438@163.com', '大疆33', '1', '3', null, '', '', null, null, null);
+INSERT INTO `company_info` VALUES ('85', 'Microsoft', 'Beijing', 'Vivian', '', '', 'Mcrosoft', '1', '', null, '', '', null, null, null);
 
 -- ----------------------------
 -- Table structure for course_info
@@ -126,13 +128,13 @@ CREATE TABLE `course_info` (
 -- ----------------------------
 -- Records of course_info
 -- ----------------------------
-INSERT INTO `course_info` VALUES ('2', 'java', '<p>后台+框架</p>\r\n', '', '闫煜瑶', '2017-06-02', '1');
-INSERT INTO `course_info` VALUES ('111', 'php', '<p>PHP开发</p>\r\n', '', '闫煜瑶', '2017-06-04', '1');
-INSERT INTO `course_info` VALUES ('114', 'ios', '<p>苹果系统</p>\r\n', '', '乔布斯2', '2017-05-23', '0');
-INSERT INTO `course_info` VALUES ('116', 'UI', '<p>前端开发</p>\r\n', '', '闫煜瑶', '2017-06-02', '0');
-INSERT INTO `course_info` VALUES ('117', 'C/C++', '<p>基础课程</p>\r\n', '', '闫煜瑶', '2017-06-04', '0');
-INSERT INTO `course_info` VALUES ('118', 'Struts2', '<p>深度好课，不容错过</p>\r\n', '', '闫煜瑶', '2017-06-04', '0');
-INSERT INTO `course_info` VALUES ('119', '计算机组成原理', '<p>计算机基础课程</p>\r\n', '', '管理员', '2017-06-04', '0');
+INSERT INTO `course_info` VALUES ('2', 'java', '<p>后台+框架</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content6.jpg', '闫煜瑶', '2017-06-02', '1');
+INSERT INTO `course_info` VALUES ('111', 'php', '<p>PHP开发</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content3.jpg', '闫煜瑶', '2017-06-04', '1');
+INSERT INTO `course_info` VALUES ('114', 'ios', '<p>苹果系统</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content5.jpg', '乔布斯2', '2017-05-23', '0');
+INSERT INTO `course_info` VALUES ('116', 'UI', '<p>前端开发</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content3.jpg', '闫煜瑶', '2017-06-02', '0');
+INSERT INTO `course_info` VALUES ('117', 'C/C++', '<p>基础课程</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content1.jpg', '闫煜瑶', '2017-06-04', '0');
+INSERT INTO `course_info` VALUES ('118', 'Struts2', '<p>深度好课，不容错过</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content7.jpg', '闫煜瑶', '2017-06-04', '0');
+INSERT INTO `course_info` VALUES ('119', '计算机组成原理', '<p>计算机基础课程</p>\r\n', 'http://localhost:8080/StudentJobSys/img/course/content2.jpg', '管理员', '2017-06-04', '0');
 
 -- ----------------------------
 -- Table structure for data_info
@@ -191,11 +193,9 @@ CREATE TABLE `job_info` (
 -- ----------------------------
 -- Records of job_info
 -- ----------------------------
-INSERT INTO `job_info` VALUES ('1', '山西汾酒', '太原', '销售', '2017-06-08', '6000', '1', '吊死扶伤', '2017-06-07', '1', '1', '1', '0');
-INSERT INTO `job_info` VALUES ('3', '中央电视台', '重庆', ' 销售员', '2017-05-31', '6000', '1', '1', '2017-06-11', '1', '51', '2', null);
-INSERT INTO `job_info` VALUES ('4', '大疆33', '重庆', ' 销售员', '2017-06-06', '6000', '1', '1', '2017-06-11', '1', '84', '1', null);
-INSERT INTO `job_info` VALUES ('5', '大疆33', '重庆', ' 销售员 ', '2017-05-31', '8000', '1', '', '2017-06-11', '1', '84', '2', null);
-INSERT INTO `job_info` VALUES ('6', '大疆', '杭州', ' 前台', '2017-06-08', '5000', '1', '嗯嗯', '2017-06-11', '蛋蛋', '9', '17', null);
+INSERT INTO `job_info` VALUES ('4', 'Tencent', '重庆', ' 销售员', '2017-06-06', '6000', '1', '1', '2017-06-11', '1', '84', '1', null);
+INSERT INTO `job_info` VALUES ('5', 'Tencent', '重庆', ' 销售员 ', '2017-05-31', '8000', '1', '', '2017-06-11', '1', '84', '2', null);
+INSERT INTO `job_info` VALUES ('6', 'FBI', '杭州', ' 前台', '2017-06-08', '5000', '1', '嗯嗯', '2017-06-11', '蛋蛋', '9', '17', null);
 
 -- ----------------------------
 -- Table structure for relation_info
@@ -299,12 +299,12 @@ CREATE TABLE `student_info` (
 -- ----------------------------
 -- Records of student_info
 -- ----------------------------
-INSERT INTO `student_info` VALUES ('1', '111', '闫煜瑶', '1', '山西', '山西长治', 'yannyuyao@163.com', '18435186359', '北京交通大学', '软件工程', '2013-09-04', '已审核', '2', '<p>学习刻苦认真，乐于助人，政治思想端正。</p>\r\n', '1', '2017-06-11', '0');
+INSERT INTO `student_info` VALUES ('1', '111', '闫煜瑶', '1', '山西', '山西长治', 'yannyuyao@163.com', '18435186359', '北京交通大学', '软件工程', '2017-09-04', '已审核', '2', '<p>学习刻苦认真，乐于助人，政治思想端正。</p>\r\n', '郭关飞', '2018-01-07', '0');
 INSERT INTO `student_info` VALUES ('2', '111', '张健', '1', '湖南', '山东潍坊', '807820764@qq.com', '18435184567', '北京交通大学', '软件工程', '2017-05-17', '已审核', '2', '<p>1</p>\r\n工作努力', '1', '2017-06-05', '0');
 INSERT INTO `student_info` VALUES ('17', '113', '盐葱葱', '1', '山西', '河北保定', '807820764@qq.com', '18435185635', '北京交通大学', '软件工程', '2017-05-28', null, null, '<p>蛋蛋</p>\r\n', '蛋蛋', '2017-06-11', '0');
-INSERT INTO `student_info` VALUES ('20', '111', '祝渊', '0', '山西', '山西太原', '516871704@qq.com', '18465235784', '北京交通大学', '软件工程', '2013-09-11', null, null, '', '', '2017-06-11', '0');
-INSERT INTO `student_info` VALUES ('21', '115', '朱峣', '0', '山东', '山西太原', '516871704@qq.com', '18465235784', '北京交通大学', '表演系', '1998-06-11', null, null, '', '', '2017-06-11', '0');
-INSERT INTO `student_info` VALUES ('22', '2', '张博', '0', '北京', '河南', '18465924586@163.com', '18465924586', '北京交通大学', '音乐', '2013-09-11', null, null, '', '', '2017-06-11', '0');
+INSERT INTO `student_info` VALUES ('20', '111', '祝渊', '0', '山西', '山西太原', '516871704@qq.com', '18465235784', '北京交通大学', '软件工程', '2017-09-11', null, null, '', '', '2017-06-11', '0');
+INSERT INTO `student_info` VALUES ('21', '111', '朱峣', '0', '山东', '山西太原', '516871704@qq.com', '18465235784', '北京交通大学', '表演系', '1998-06-11', null, null, '', '', '2017-06-11', '0');
+INSERT INTO `student_info` VALUES ('22', '2', '张博', '0', '北京', '河南', '18465924586@163.com', '18465924586', '北京交通大学', '音乐', '2017-09-11', null, null, '', '', '2017-06-11', '0');
 INSERT INTO `student_info` VALUES ('23', '114', '闫聪聪', '0', '山西', '河北保定', '18465924586@163.com', '18465235784', '北京交通大学', '软件工程', '2017-06-05', null, null, '', '', '2017-06-12', '0');
 INSERT INTO `student_info` VALUES ('24', '2', '耿雪饼', '0', '山西', '江苏徐州', '18465924586@163.com', '18465924586', '北京交通大学', '软件工程', '1998-06-11', null, null, '', '', '2017-06-12', '0');
 INSERT INTO `student_info` VALUES ('27', '2', '岳润润', '0', '山西', '河北邢台', '18459486235@163.com', '18459862358', '北京交通大学', '软件工程', '2017-06-06', null, null, '<p>1</p>\r\n', '1', '2017-06-12', '0');
@@ -365,7 +365,7 @@ INSERT INTO `user_info` VALUES ('5', 'dandan', 'dandan', '20', '1', '3', '1');
 INSERT INTO `user_info` VALUES ('6', '闫煜瑶', 'yyy12345', '20', '1', '3', '0');
 INSERT INTO `user_info` VALUES ('7', 'root', 'root', '20', '1', '3', '1');
 INSERT INTO `user_info` VALUES ('8', '丽丽', 'yyy12345', '20', '1', '0', '0');
-INSERT INTO `user_info` VALUES ('9', '1314011304', 'yyy12345', '20', '1', '3', '0');
+INSERT INTO `user_info` VALUES ('9', '大傻逼', 'yyy12345', '20', '1', '3', '0');
 INSERT INTO `user_info` VALUES ('10', '万达', 'company', '22', '1', '1', '0');
 INSERT INTO `user_info` VALUES ('11', '林更新', 'yyy12345', '20', '1', '3', '0');
 INSERT INTO `user_info` VALUES ('12', 'dong', 'yyy12345', '20', '1', '3', '1');
