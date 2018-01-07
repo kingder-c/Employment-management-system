@@ -39,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="head_top">
         <div id="head_top_section">
             <div id="head_top_left">软件工程7班最棒小组作品</div>
-            <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0351-100000000 设为首页 / 联系我们
+            <div id="head_top_right"><img src="img/nav-icon.png">全国咨询热线：0351-11111111 设为首页 / 联系我们
             <c:if test="${role.role_id == 26||role.role_id == 28 }">
             <a href="main.html" style=" text-decoration:none;color:#fff;">登录后台</a>
             </c:if>
